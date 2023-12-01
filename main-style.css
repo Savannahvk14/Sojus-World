@@ -1,0 +1,113 @@
+body {
+  background: FloralWhite;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  height: 100%
+}
+
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: DeepPink;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+li a:hover {
+  background-color: #ccff80;
+  color: black;
+}
+
+header a{
+  font-family: Merriweather, serif;
+  font-size: 46px;
+  color: MediumVioletRed;
+  text-decoration: none;
+
+}
+.flex-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.top-content {
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: pink;
+  background-color: lavender;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.star {
+  filter: hue-rotate(170deg);
+}
+.blog-container {
+  float: left;
+  width: 60%;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: lavender;
+  padding: 50px;
+  height: 30%;
+}
+
+h1.blog-container {
+  font-family: "Open Sans", serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: #9370DB;
+  padding: 10px;
+}
+
+#active {
+  background-color: indigo;
+}
+
+.blog-background {
+  background-color: #ccff80;
+}
+
+.meal-update {
+  background-color: MediumPurple;
+  float: left;
+  width: 30%;
+  height: 100%;
+  padding-left: 20px;
+  margin: 10px;
+  margin-left: 15px;
+}
+
+.meal-update.h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .blog-container {
+    width: 100%;
+  }
+  .meal-update {
+    width: 100%;
+    padding-left: 43px;
+    margin-left: 20px;
+  }
+  .pic-week {
+    width: 100%;
+  }
+}
