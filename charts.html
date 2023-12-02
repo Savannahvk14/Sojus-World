@@ -4,6 +4,7 @@
   <title>Soju's World</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" >
   <link href="main-style.css" rel="stylesheet">
+  <link href="charts.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
 </head>
 <body>
@@ -26,7 +27,42 @@
 </div>
 </div>
 
+<!-- Source code for js charts -->
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 
+<!-- Defines id and style of the growth chart -->
+<canvas id="growthChart" style="width:100%;max-width:700px"></canvas>
+
+<!-- Growth chart js -->
+<script>
+const xValues = ["1 month","2 months","3 months"];
+const yValues = [1.5,2,3];
+
+new Chart("growthChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      label: "Soju's Growth over Time",
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(245, 40, 145, 0.8)",
+      borderColor: "rgba(182, 96, 224, 0.8)",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: true},
+    scales: {
+      yAxes: [{ticks: {min: 0.5, max:5}}],
+    }
+  }
+});
+</script>
+
+<!-- Link to main js file -->
     <script src="script.js"></script>
 </body>
 </html>
