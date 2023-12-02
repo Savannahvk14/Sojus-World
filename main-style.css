@@ -77,7 +77,8 @@ h1.blog-container {
 }
 
 #active {
-  background-color: indigo;
+  background-color: LavenderBlush;
+  color: #ADFF2F;
 }
 
 .blog-background {
